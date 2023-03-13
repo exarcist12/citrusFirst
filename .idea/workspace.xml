@@ -5,12 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="adad913c-36c3-4d95-9363-e315ff32c2f5" name="Changes" comment="dcsc">
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson/tests/EchoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson/tests/FirstTestCreateUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson/tests/FirstTestGetUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/json/user2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson/behaviors/CreateUserBehavior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson/feathers/CustomMarshaller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson/tests/FirstTestDataProviderCreateUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson/tests/FirstTestDataProviderGetUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson/tests/FirstTestSoap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/wsdl/numberconversion.wsdl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lesson/tests/FirstTestGetUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lesson/tests/FirstTestGetUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/citrus-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/citrus-context.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/citrus.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/citrus.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/citrus-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/citrus-reports/TEST-TestSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/citrus-reports/citrus-test-results.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/citrus-reports/citrus-test-results.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/lesson/tests/FirstTestGetUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lesson/tests/FirstTestGetUser.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,19 +55,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/exarc/citrus/citrusFirst"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/exarc/citrus/citrusFirst&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="lesson.tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.FirstTestCreateUser.getTestActions">
+  <component name="RunManager" selected="TestNG.FirstTestSoap.getTestActions">
     <configuration name="FirstTestCreateUser.getTestActions" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="citrusFirst" />
       <extension name="coverage">
@@ -70,6 +78,42 @@
       </extension>
       <option name="PACKAGE_NAME" value="lesson.tests" />
       <option name="MAIN_CLASS_NAME" value="lesson.tests.FirstTestCreateUser" />
+      <option name="METHOD_NAME" value="getTestActions" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FirstTestDataProviderCreateUser.getTestActions" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="citrusFirst" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson.tests" />
+      <option name="MAIN_CLASS_NAME" value="lesson.tests.FirstTestDataProviderCreateUser" />
+      <option name="METHOD_NAME" value="getTestActions" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FirstTestDataProviderGetUser.getTestActions" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="citrusFirst" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson.tests" />
+      <option name="MAIN_CLASS_NAME" value="lesson.tests.FirstTestDataProviderGetUser" />
       <option name="METHOD_NAME" value="getTestActions" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -96,10 +140,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FirstTestSoap.getTestActions" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="citrusFirst" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson.tests" />
+      <option name="MAIN_CLASS_NAME" value="lesson.tests.FirstTestSoap" />
+      <option name="METHOD_NAME" value="getTestActions" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.FirstTestCreateUser.getTestActions" />
+        <item itemvalue="TestNG.FirstTestSoap.getTestActions" />
         <item itemvalue="TestNG.FirstTestGetUser.getTestActions" />
+        <item itemvalue="TestNG.FirstTestDataProviderCreateUser.getTestActions" />
+        <item itemvalue="TestNG.FirstTestDataProviderGetUser.getTestActions" />
+        <item itemvalue="TestNG.FirstTestCreateUser.getTestActions" />
       </list>
     </recent_temporary>
   </component>
@@ -119,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678636025296</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="dcsc">
+      <created>1678686513160</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678686513160</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -136,5 +208,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="dcsc" />
     <option name="LAST_COMMIT_MESSAGE" value="dcsc" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/lesson/tests/FirstTestDataProviderCreateUser.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -2,8 +2,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>demo</groupId>
-  <artifactId>citrusFirst</artifactId>
+  <groupId>demoCitrus</groupId>
+  <artifactId>citrusExtended</artifactId>
   <version>1.0-SNAPSHOT</version>
   <name>Citrus Integration Test</name>
 
@@ -46,6 +46,12 @@
     </dependency>
 
     <dependency>
+      <groupId>com.consol.citrus</groupId>
+      <artifactId>citrus-validation-json</artifactId>
+      <version>${citrus.version}</version>
+    </dependency>
+
+    <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
       <version>${slf4j.version}</version>
@@ -60,6 +66,11 @@
       <artifactId>log4j-slf4j-impl</artifactId>
       <version>${log4j2.version}</version>
     </dependency>
+    <dependency>
+      <groupId>jakarta.xml.ws</groupId>
+      <artifactId>jakarta.xml.ws-api</artifactId>
+      <version>2.3.2</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -69,7 +80,7 @@
         <artifactId>citrus-maven-plugin</artifactId>
         <version>${citrus.version}</version>
         <configuration>
-
+          <!--            <targetPackage>demoCitrus</targetPackage>-->
         </configuration>
       </plugin>
 
@@ -85,7 +96,7 @@
 
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.22.2</version>
+        <version>3.0.0-M7</version>
         <configuration>
           <failIfNoTests>false</failIfNoTests>
           <workingDirectory>${project.build.directory}</workingDirectory>
@@ -106,6 +117,30 @@
           </execution>
         </executions>
       </plugin>
+
+      <!--      <plugin>-->
+      <!--        <groupId>org.apache.cxf</groupId>-->
+      <!--        <artifactId>cxf-codegen-plugin</artifactId>-->
+      <!--        <version>3.3.4</version>-->
+      <!--        <executions>-->
+      <!--          <execution>-->
+      <!--            <id>generate-sources-api</id>-->
+      <!--            <phase>generate-sources</phase>-->
+      <!--            <configuration>-->
+      <!--              <sourceRoot>${basedir}/src/test/java</sourceRoot>-->
+      <!--              <wsdlOptions>-->
+      <!--                <wsdlOption>-->
+      <!--                  <wsdl>https://www.dataaccess.com/webservicesserver/numberconversion.wso?WSDL</wsdl>-->
+      <!--                </wsdlOption>-->
+      <!--              </wsdlOptions>-->
+      <!--            </configuration>-->
+      <!--            <goals>-->
+      <!--              <goal>wsdl2java</goal>-->
+      <!--            </goals>-->
+      <!--          </execution>-->
+      <!--        </executions>-->
+      <!--      </plugin>-->
+
     </plugins>
   </build>
 </project>

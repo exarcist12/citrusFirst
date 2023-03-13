@@ -5,6 +5,7 @@ import com.consol.citrus.context.TestContext;
 import com.consol.citrus.message.builder.ObjectMappingPayloadBuilder;
 import com.consol.citrus.testng.TestNGCitrusSupport;
 import com.consol.citrus.testng.spring.TestNGCitrusSpringSupport;
+import lesson.behaviors.CreateUserBehavior;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.http.HttpStatus;
 import org.testng.annotations.Test;
@@ -23,6 +24,7 @@ public class FirstTestGetUser extends TestNGCitrusSupport {
 	public void getTestActions() {
 		this.context = citrus.getCitrusContext().createTestContext();
 
+		run(applyBehavior(new CreateUserBehavior("Mike", "Worker", context)));
 
 //Отправка
 		$(http()
