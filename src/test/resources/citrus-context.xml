@@ -51,6 +51,15 @@
                       request-url="${urlSOAP}"
                       timeout="60000"/>
 
+    <citrus-ws:client id="soapHelper"
+                      request-url="${urlSOAP}"
+                      timeout="60000"/>
+
+    <citrus-http:client id="httpHelperClient"
+                        request-url="${url}"
+                        content-type="application/json"
+                        timeout="15000"/>
+
     <!--For SOAP 1.1-->
     <bean id="messageFactory" class="org.springframework.ws.soap.saaj.SaajSoapMessageFactory">
         <property name="soapVersion">

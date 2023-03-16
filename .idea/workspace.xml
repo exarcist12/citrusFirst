@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="adad913c-36c3-4d95-9363-e315ff32c2f5" name="Changes" comment="dcsc">
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson/tests/TestMock.java" afterDir="false" />
+    <list default="true" id="adad913c-36c3-4d95-9363-e315ff32c2f5" name="Changes" comment="соап и мок на цитрусе">
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson/helpers/TestHelperHTTP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson/helpers/TestHelperSoap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/citrus-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/citrus-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/citrus.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/citrus.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/citrus-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/citrus-reports/TEST-TestSuite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/citrus-reports/citrus-test-results.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/citrus-reports/citrus-test-results.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/citrus-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/citrus-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/citrus.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/citrus.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,43 +61,7 @@
       <recent name="lesson.tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestMock.getTestActions">
-    <configuration name="FirstTestDataProviderCreateUser.getTestActions" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="citrusFirst" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="lesson.tests" />
-      <option name="MAIN_CLASS_NAME" value="lesson.tests.FirstTestDataProviderCreateUser" />
-      <option name="METHOD_NAME" value="getTestActions" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FirstTestDataProviderGetUser.getTestActions" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="citrusFirst" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="lesson.tests" />
-      <option name="MAIN_CLASS_NAME" value="lesson.tests.FirstTestDataProviderGetUser" />
-      <option name="METHOD_NAME" value="getTestActions" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.TestHelperSoap.getTestActions">
     <configuration name="FirstTestGetUser.getTestActions" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="citrusFirst" />
       <extension name="coverage">
@@ -134,6 +98,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestHelperHTTP.getTestActions" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="citrusFirst" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson.helpers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson.helpers" />
+      <option name="MAIN_CLASS_NAME" value="lesson.helpers.TestHelperHTTP" />
+      <option name="METHOD_NAME" value="getTestActions" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestHelperSoap.getTestActions" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="citrusFirst" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson.helpers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson.helpers" />
+      <option name="MAIN_CLASS_NAME" value="lesson.helpers.TestHelperSoap" />
+      <option name="METHOD_NAME" value="getTestActions" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestMock.getTestActions" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="citrusFirst" />
       <extension name="coverage">
@@ -154,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestHelperSoap.getTestActions" />
+        <item itemvalue="TestNG.TestHelperHTTP.getTestActions" />
         <item itemvalue="TestNG.TestMock.getTestActions" />
         <item itemvalue="TestNG.FirstTestSoap.getTestActions" />
         <item itemvalue="TestNG.FirstTestGetUser.getTestActions" />
-        <item itemvalue="TestNG.FirstTestDataProviderCreateUser.getTestActions" />
-        <item itemvalue="TestNG.FirstTestDataProviderGetUser.getTestActions" />
       </list>
     </recent_temporary>
   </component>
@@ -192,7 +192,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678726138053</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="соап и мок на цитрусе">
+      <created>1678727946750</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678727946750</updated>
+    </task>
+    <task id="LOCAL-00005" summary="соап и мок на цитрусе">
+      <created>1678727976199</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1678727976199</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -208,7 +222,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="dcsc" />
-    <option name="LAST_COMMIT_MESSAGE" value="dcsc" />
+    <MESSAGE value="соап и мок на цитрусе" />
+    <option name="LAST_COMMIT_MESSAGE" value="соап и мок на цитрусе" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
